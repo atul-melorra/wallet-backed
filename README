@@ -1,0 +1,48 @@
+# Project Name
+
+## Description
+
+This project implements a wallet system with transaction functionality using Node.js, Express.js, and MongoDB.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Technologies Used](#technologies-used)
+
+## Installation
+
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies: `npm install`
+
+## Usage
+
+1. Set up a MongoDB Atlas cluster and obtain the connection string.
+2. Create a `.env` file in the root directory and add the following environment variables:
+
+3. Start the server: `npm start`
+
+## API Endpoints
+## POSTMAN Collection
+https://winter-moon-837549.postman.co/workspace/myworld~3bd8400e-3f52-4a51-95c8-2f0abcf108dc/collection/12860517-59b7d3cb-f39f-4199-95ca-9eef95bcde58?action=share&creator=12860517
+### Wallet
+
+- `POST /wallet/setup`: Create a new wallet with initial balance.
+- `GET /wallet/:id`: Get wallet details by ID.
+
+### Transactions
+
+- `POST /wallet/transact/:walletId`: Create a new transaction for the specified wallet.
+- `GET /wallet/transaction/?walletId=`: Get all transactions for the specified wallet.
+
+For detailed request and response examples, refer to the API documentation.
+
+
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
